@@ -1,0 +1,543 @@
+@charset "utf-8";
+
+
+/**/
+html,body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+  font-family: "Noto Serif TC", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.05rem;
+	-webkit-text-size-adjust: 100%;
+}
+
+h1,h2,h3,h4,p,ul,li,blockquote,a {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-weight: normal;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover{
+	opacity: 0.9;
+}
+
+a img {
+	border: none;
+}
+
+p {
+	color: #333;
+	line-height: 1.5;
+	font-size: 14px;
+}
+
+section{
+  position: relative;
+  display: block;
+}
+
+img {
+	display: block;
+}
+
+.fadein-move { 
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+
+.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.pc-view{display: block;}
+.sp-view{display: none;}
+
+
+/*------------hydra------------*/
+
+
+#syndeo #topic{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background-image: url("images/hydra_bg_water01.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+  height: 100vh;
+}
+
+#syndeo #topic .top_tag{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+}
+
+#syndeo #topic .topic_block .top_photo{
+  position: absolute;
+  top: 0vw;
+  right: -3vw;
+  width: 60%;
+  z-index: 1;
+}
+
+#syndeo #topic .topic_block .top_text{
+  position: relative;
+  width: 50%;
+  margin: 7.5% 0 0 7.5%;
+  z-index: 2;
+}
+
+#syndeo #topic .topic_block .top_text .top_title_logo{
+  width: 300px;
+}
+
+#syndeo #topic .topic_block .top_text h1{
+  font-size: 5rem;
+  font-weight: 600;
+  color: #0077df;
+}
+
+#syndeo #topic .topic_block .top_text h2{
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 2% 0 1%;
+}
+
+#syndeo #topic .topic_block .top_text .top_title_en{
+  margin: 0 0 3%;
+}
+
+#syndeo #topic .topic_block .top_text .min60{
+  width: 55%;
+  margin: 0 0 3%;
+}
+
+
+#syndeo #topic .topic_block .top_text a.try_btn{
+  position: relative;
+  display: block;
+  width: 55%;
+}
+
+
+#syndeo #certificate{
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  background: #180b05;
+}
+
+#syndeo #certificate .cert_text{
+  padding: 7.5% 0 0 7.5%;
+  width: 40%;
+}
+
+#syndeo #certificate .cert_text ul{
+  display: flex;
+  width: 90%;
+}
+
+#syndeo #certificate .cert_text ul li{
+  margin: 0 8% 0 0;
+}
+
+#syndeo #certificate .cert_text p{
+  font-size: 1rem;
+  line-height: 2;
+  margin: 5% 0 5%;
+  color: #fff;
+}
+
+#syndeo #certificate .cert_img{
+  position: absolute;
+  top: 2.5vw;
+  right: -15vw;
+  width: 70%;
+  z-index: 1;
+}
+
+#syndeo #five_step{
+  position: relative;
+  display: block;
+  background-image: url("images/hydra_bg_water01.jpg");
+	background-repeat: no-repeat;
+  background-position: left 20% top 50%;
+	background-size: 100%;
+  padding: 5% 0;
+}
+
+#syndeo #five_step .five_title{
+  width: 50%;
+  margin: 0% auto 5%;
+}
+
+#syndeo #five_step .manual{
+  background: none;
+}
+
+#syndeo #five_step .manual li{
+  height: auto;
+  background: none;
+}
+
+#syndeo #five_step .manual li p{
+  margin: 10% 0 5%;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 2;
+}
+
+#syndeo #five_step .manual .slick-dots{
+  display: none;
+}
+
+
+
+#syndeo #break{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background-image: url("images/hydra_bg_p4.jpg");
+	background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#syndeo #break .unlock{
+  display: flex;
+  align-items: center;
+  padding: 7.5%;
+}
+
+#syndeo #break .unlock .title{
+  width: 40%;
+  margin: 0 5%;
+}
+
+#syndeo #break .unlock .star_list{
+  width: 50%;
+  margin: 0 0 0 7.5%;
+}
+
+#syndeo #break .unlock .star_list li{
+  padding: 0 0 4%;
+}
+
+#syndeo #break .unlock .star_list li h4{
+  font-size: 1.25rem;
+  color: #a3e8fd;
+  padding: 0 0 1%;
+}
+
+#syndeo #break .unlock .star_list li p{
+  font-size: 1rem;
+  line-height: 1.75;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+#syndeo #break .star_line{
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 7.5%;
+}
+
+#syndeo #break .star_line .blue_line{
+  width: 99%;
+  height: 1px;
+  background: #a3e8fd;
+}
+
+#syndeo #break .star_line .star_img{
+  position: absolute;
+  right: 0;
+  width: 3%;
+}
+
+#syndeo #break .machine{
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  width: 85%;
+  margin: 7.5% auto 0;
+}
+
+#syndeo #break .machine .machine_img{
+  position: relative;
+  width: 40%;
+}
+
+#syndeo #break .machine .machine_img .pretty{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%,0);
+  width: 40%;
+}
+
+#syndeo #break .machine .machine_text{
+  width: 55%;
+  margin: 0 0 5% 5%;
+}
+
+#syndeo #break .machine .machine_text .title{
+  width: 90%;
+  margin: 0 auto 2.5%;
+}
+
+#syndeo #break .machine .machine_text .btn{
+  display: block;
+  width: 60%;
+  margin: 2.5% auto;
+}
+
+#syndeo .autoplay-slider{
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#syndeo .autoplay-slider .slider-item{
+  height: 300px;
+  text-align: center;
+  color: #fff;
+  margin: 0 1%;
+}
+
+#syndeo .autoplay-slider .slick-prev,
+#syndeo .autoplay-slider .slick-next{
+  font-size: 22px;
+  font-weight: 900;
+}
+
+#syndeo .autoplay-slider .slick-prev:before,
+#syndeo .autoplay-slider .slick-next:before{
+  content: '';
+}
+
+#syndeo .autoplay-slider .fa{
+  font-size: 20px;
+  color: #fff;
+}
+
+
+#syndeo .s-block{
+  position: relative;
+  display: block;
+  background-image: url("images/hydra_bg_water.jpg");
+	background-repeat: no-repeat;
+  background-position: right 20% top 50%;
+	background-size: 100%;
+  padding: 7.5%;
+}
+
+#syndeo .s-block .s-title{
+  width: 85%;
+  margin: 0 auto 3%;
+}
+
+#syndeo .s-block .table{
+  width: 90%;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 10px;
+  border: 3px solid #fff;
+}
+
+#syndeo .s-block .table thead tr,
+#syndeo .s-block .table tbody tr{
+  border-radius: 10px;
+}
+
+
+#syndeo .s-block .table tbody tr td{
+  text-align:center;
+  vertical-align:middle;
+}
+
+#syndeo .s-block .table thead tr th,
+#syndeo .s-block .table tbody tr th{
+  color: #fff;
+  background-color: #3c95e6;
+  padding: 15px;
+  font-size: 1.25rem;
+}
+
+#syndeo .s-block .table tbody tr td{
+  position: relative;
+  background-color: #eceaeb;
+  padding: 15px;
+}
+
+#syndeo .s-block .table tbody tr td .win{
+  position: absolute;
+  top: -20%;
+  right: 3%;
+  width: 30px;
+  height: 30px;
+  transform: rotateZ(15deg);
+  background-image: url("images/hydra_p5_red.png");
+  background-repeat: no-repeat;
+	background-size: 100%;
+  z-index: 3;
+}
+
+#syndeo #media{
+  position: relative;
+  background: #090f1b;
+  padding: 7.5% 2.5% 2.5%;
+}
+
+#syndeo #media .title{
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 0 5%;
+}
+
+#syndeo #media .media_all{
+  width: 100%;
+  margin: 0 auto;
+}
+
+#syndeo #feedback{
+  position: relative;
+  display: block;
+  background-image: url("images/hydra_bg_dots.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+  padding: 2.5% 5% 15%;
+}
+
+#syndeo #feedback .title{
+  width: 50%;
+  margin: 0 auto;
+  padding: 5% 0;
+}
+
+#syndeo #feedback .comment{
+  width: 100%;
+}
+
+#syndeo #feedback .comment li{
+  height: auto;
+}
+
+#syndeo #feedback .comment li p{
+  margin: 15% 0 5%;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 2;
+}
+
+#syndeo #feedback .comment .slick-dots{
+  display: none;
+}
+
+#syndeo #feedback #qa_list{
+  position: relative;
+  margin: 2% auto;
+}
+
+#syndeo #feedback #qa_list li{
+  color:#0096ea;
+  margin: 0 auto 2%;
+}
+
+#syndeo #feedback #qa_list li .qu{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 1.5% 3%;
+  background: #eefbff;
+  border-radius: 30px;
+  box-shadow: 5px 5px #a9a9a9
+}
+
+#syndeo #feedback #qa_list li:nth-child(2n) .qu{
+  background: #fff;
+}
+
+#syndeo #feedback #qa_list li .qu p{
+  color: #0096ea ;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+#syndeo #feedback #qa_list li .qu p.arrow{
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1;
+  transition: all 0.5s;
+  color: #0096ea ;
+}
+
+#syndeo #feedback #qa_list li .ans{
+  margin: 1% 0 0 0;
+  padding: 1.5% 3%;
+  font-size: 1rem;
+  display: none;
+  background: #eefbff;
+  border-radius: 30px;
+  box-shadow: 5px 5px #a9a9a9
+}
+
+#syndeo #feedback #qa_list li:nth-child(2n) .ans{
+  background: #fff;
+}
+
+#syndeo #feedback #qa_list li .ans p{
+  color: #3c94e6 ;
+  line-height: 1.5;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+
+.open{
+  transform: rotate(90deg);
+  transition: all 0.5s;
+}
+
+.fix1999{
+  position: fixed;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  z-index: 99;
+}
+
+
+/*------------------------------------------
+ *             tablet 、 Mobile
+ *------------------------------------------*/
+
+
+ @media screen and (max-width:1200px) {
+
+  .pc-view{display: none;}
+  .sp-view{display: block;}
+
+ }
+
+
+

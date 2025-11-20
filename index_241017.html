@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盎然SPA-海菲秀</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="hydra.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+        $('.arrow').click(function(e){ 
+            e.preventDefault();
+            $(this).toggleClass("open");
+            $(this).parent().parent().find('.ans').slideToggle();
+            
+        });
+    });
+    </script>
+
+    <script>
+        $(document).on("scroll", function() {
+            var pageTop = $(document).scrollTop();
+            var pageBottom = pageTop + $(window).height();
+            var tags = $(".fadein-move");
+
+            for (var i = 0; i < tags.length; i++) {
+                var tag = tags[i];
+
+                if ($(tag).position().top < pageBottom) {
+                $(tag).addClass("visible");
+                } else {
+                $(tag).removeClass("visible");
+                }
+            }
+        });
+    </script>
+
+</head>
+<body>
+
+<main id="syndeo">
+
+    <section id="topic">
+        <p class="top_tag">
+            <img src="images/hydra_top_tag.png" alt="" width="100%">
+        </p>
+        <div class="topic_block">
+            <div class="top_photo">
+                <img src="images/hydra_top_girl.png" alt="" width="100%">
+            </div>
+            <div class="top_text">
+                <p class="top_title_logo">
+                    <img src="images/hydra_h_logo.png" alt="" width="100%">
+                </p>
+                <h1>美國海菲秀</h1>
+                <h2>奢寵肌膚盛宴，無論何種膚質，皆能享受的極致呵護。</h2>
+                <p class="top_title_en">
+                    OUR PATENTED VORTEX FUSION TECHNOLOGY WORKS LIKE A VACUUM TO GENTLY EXFOLIATE AND OPEN PORES, VISIBLY EXTRACT DIRT AND DEBRIS, AND INFUSE TARGETED SERUMS INTO THE SKIN FOR THE ULTIMATE SKIN HEALTH EXPERIENCE.
+                </p>
+                <img src="images/hydra_60min.png" class="min60" alt="" width="100%">
+                <a href="#" target="_blank" class="try_btn">
+                    <img src="images/hydra_p1_btn.png" alt="" width="100%">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificate">
+        <div class="cert_text">
+            <ul>
+                <li><img src="images/hydra_p2_01.png" alt="" width="100%"></li>
+                <li><img src="images/hydra_p2_02.png" alt="" width="100%"></li>
+                <li><img src="images/hydra_p2_03.png" alt="" width="100%"></li>
+            </ul>
+            <p>
+                海菲秀(HydraFacial®)為非侵入、非雷射類的肌膚保養療程，使用一系列HydroPeel®專利端頭，其端頭的螺旋刮片設計搭配負壓技術，使精華液注入肌膚過程中產生渦漩效果，讓髒污脫落的同時給予肌膚滋潤與抗氧化防護。
+            </p>
+            <img src="images/hydra_certificate.png" alt="">
+        </div>
+        <div class="cert_img">
+            <img src="images/hydra_p2_topic.png" alt="" width="100%">
+        </div>
+    </section>
+
+
+    <section id="five_step">
+        <div class="five_title">
+            <img src="images/hydra_p3_title.png" alt="" width="100%">
+        </div>
+        <ul class="manual autoplay-slider">
+            <li class="slider-item">
+                <img src="images/hydra_p3_step1.png" alt="" width="100%">
+                <p>
+                    洗淨表面臟污、溫和乳酸更新角質,使肌膚表皮焕然一新。
+                </p>
+            </li>
+            <li class="slider-item">
+                <img src="images/hydra_p3_step2.png" alt="" width="100%">
+                <p>
+                    螺旋水流探頭及水楊酸深層清潔毛孔、將閉鎖粉刺一網打盡。
+                </p>
+            </li>
+            <li class="slider-item">
+                <img src="images/hydra_p3_step3.png" alt="" width="100%">
+                <p>
+                    將肌膚角落難清潔及頑固的粉刺一一挑出。
+                </p>
+            </li>
+            <li class="slider-item">
+                <img src="images/hydra_p3_step4.png" alt="" width="100%">
+                <p>
+                    客製化挑選精華液,為肌膚注入所需養分。
+                </p>
+            </li>
+            <li class="slider-item">
+                <img src="images/hydra_p3_step5.png" alt="" width="100%">
+                <p>
+                    讓肌膚喝飽水、還您雞蛋肌般的光滑柔嫩。
+                </p>
+            </li>
+        </ul>
+
+        
+    </section>
+
+
+    <section id="break">
+        <div class="unlock">
+            <div class="title">
+                <img src="images/hydra_p4_title1.png" alt="" width="100%">
+            </div>
+            <ul class="star_list">
+                <li>
+                    <h4>★ 專利渦漩技術</h4>
+                    <p class="text">渦漩注入技術，能深入毛孔，溫和地清除老廢角質、黑頭粉
+                        與臟污，同時注入保濕精華，讓肌膚深層清潔又保濕。</p>
+                </li>
+                <li>
+                    <h4>★ 客製化療程</h4>
+                    <p class="text">根據不同膚質和問題，搭配不同功效的精華液，提供客製化的保養。</p>
+                </li>
+                <li>
+                    <h4>★ 無痛無創</h4>
+                    <p class="text">非侵入式、無傷口、無熱破壞，無恢復期，不影響日常生活。</p>
+                </li>
+                <li>
+                    <h4>★ 多重功效</h4>
+                    <p class="text">清除粉刺、改善毛孔粗大、提亮膚色、增加肌膚彈性、減少細紋等。</p>
+                </li>
+                <li>
+                    <h4>★ 安全快速</h4>
+                    <p class="text">全膚質適用的醫療級專業儀器，療程時間約30分鐘，效果顯著，快速改善各式肌膚問題。</p>
+                </li>
+            </ul>
+        </div>
+        <div class="star_line">
+            <p class="blue_line"></p>
+            <p class="star_img">
+                <img src="images/hydra_p4_star.png" alt="" width="100%">
+            </p>
+        </div>
+        <div class="machine">
+            <div class="machine_img">
+                <img src="images/hydra_machine.png" alt="" width="100%">
+                <img src="images/hydra_factory.png" alt="" width="100%" class="pretty">
+            </div>
+            <div class="machine_text">
+                <p class="title">
+                    <img src="images/hydra_p4_title2.png" alt="" width="100%">
+                </p>
+                <img src="images/hydra_p4_points.png" alt="" width="100%">
+                <a href="#" target="_blank" class="btn">
+                    <img src="images/hydra_p4_btn.png" alt="" width="100%">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="s-block fadein-move">
+        <p class="s-title">
+            <img src="images/hydra_p5_title1.png" alt="" width="100%">
+        </p>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th style="border-top-left-radius: 10px;"><div>&nbsp;</div></th>
+                        <th><div>海菲秀</div></th>
+                        <th style="border-top-right-radius: 10px;"><div>傳統做臉</div></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">清潔方式</th>
+                        <td><div class="win"></div>透過水流和真空吸力，<br>深層清潔毛孔</td>
+                        <td style="background-color: #f7f7f7;">以手動方式清潔、按摩臉部</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">療程時間</th>
+                        <td style="background-color: #f7f7f7;"><div class="win"></div>30分</td>
+                        <td>約1-2小時</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">療程效果</th>
+                        <td><div class="win"></div>專利螺旋刮片，深層清潔保養</td>
+                        <td style="background-color: #f7f7f7;">清除粉刺無法深層保養</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">舒適度</th>
+                        <td style="background-color: #f7f7f7;"><div class="win"></div>舒適無痛</td>
+                        <td>易紅腫痛</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">恢復期</th>
+                        <td><div class="win"></div>無恢復期，可立即上妝</td>
+                        <td style="background-color: #f7f7f7;">容易輕微紅腫，需休息數小時</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="border-bottom-left-radius: 10px;">安全性</th>
+                        <td style="background-color: #f7f7f7;"><div class="win"></div>溫和無痛，不易造成肌膚刺激</td>
+                        <td style="border-bottom-right-radius: 10px;">肌膚敏感者可能因手勢過重造成肌膚紅腫或敏感</td>
+                    </tr>
+                </tbody>
+            </table>
+          </div>
+    </section>
+
+
+    <section id="media">
+        <p class="title">
+            <img src="images/hydra_p6_title1.png" alt="" width="100%">
+        </p>
+        <div class="media_all">
+            <img src="images/hydra_p6_media.png" alt="" width="100%">
+        </div>
+        <p class="hand sp-view">
+            <img src="images/hydra_p6_hand.png" alt="" width="100%">
+        </p>
+    </section>
+
+    <section id="feedback">
+        <div class="title">
+            <img src="images/hydra_p7_title1.png" alt="" width="100%">
+        </div>
+
+        <ul class="comment autoplay-slider">
+            <li class="slider-item">
+                <img src="images/hydra_p7_g1.png" alt="" width="100%">
+                <p class="text">身為油性肌，T字部位的毛孔粗大一直是我的困擾。每次上妝都覺得卡卡的，鼻頭的黑頭更是怎么清都清不完。做了海菲秀之后，感覺毛孔真的有變小了，鼻頭也變得滑嫩，上妝服貼很多!而且，療程過程很舒服，完全沒有痛感，做完皮膚透亮，整個心情都好了起來〜</p>
+            </li>
+            <li class="slider-item">
+                <img src="images/hydra_p7_g2.png" alt="" width="100%">
+                <p class="text">我本身是屬於乾燥肌，即使擦了再多的保濕產品，皮膚還是覺得緊繃。做了海菲秀之后，感覺皮膚喝飽了水，變得柔軟有彈性。而且，療程中注入的精華液很舒服，整個臉都亮了起來。隔天起床皮膚還是水嫩嫩的，讓我對海菲秀的效果感到非常滿意·</p>
+            </li>
+            <li class="slider-item">
+                <img src="images/hydra_p7_g3.png" alt="" width="100%">
+                <p class="text">我是敏感肌，對保養品很挑剔，常常换個產品就過敏。做了海菲秀之后，我非常驚訝，完全沒有任何不適感。療程過程很温和，做完皮膚反而更穩定，紅腫的現象也改善很多。現在我終於可以放心地做臉部保養了!</p>
+            </li>
+        </ul>
+
+        <ul id="qa_list" class="fadein-move">
+            <li>
+              <div class="qu">
+                <p>Q1.海菲秀安全嗎？</p>
+                <p class="arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></p>
+              </div>
+              <div class="ans">
+                <p>海菲秀受美國 FDA 與台灣 TFDA 雙重認證，溫和舒適，無恢復期，是一項適合各膚質使用的非侵入式保養療程。</p>
+              </div>
+            </li>
+            <li>
+                <div class="qu">
+                  <p>Q2.海菲秀療程需要多少時間？</p>
+                  <p class="arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></p>
+                </div>
+                <div class="ans">
+                  <p>海菲秀療程時間約為30分鐘，透過經典3步驟，帶給皮膚柔嫩透亮，增強抗氧化防護力。</p>
+                </div>
+            </li>
+            <li>
+                <div class="qu">
+                  <p>Q3.海菲秀會痛嗎？有恢復期嗎？</p>
+                  <p class="arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></p>
+                </div>
+                <div class="ans">
+                  <p>海菲秀為非侵入式保養療程，舒適無痛，不會造成肌膚傷口，也無恢復期，且完全不影響日常作息，無需擔心。</p>
+                </div>
+            </li>
+            <li>
+                <div class="qu">
+                  <p>Q4.海菲秀有副作用嗎？</p>
+                  <p class="arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></p>
+                </div>
+                <div class="ans">
+                  <p>海菲秀為醫學美容療程，療程後立即可見皮膚細緻平滑且充滿水份，同時不會對人體造成任何傷害，所以療程後也不會產生副作用。然而海菲秀療程後少部分的人會有暫時性刺激、緊繃或泛紅的情形發生，但皆為正常現象，通常於療程後72小時內會逐漸恢復。</p>
+                </div>
+            </li>
+            <li>
+                <div class="qu">
+                  <p>Q5.海菲秀需要進行幾次才可以見效？</p>
+                  <p class="arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></p>
+                </div>
+                <div class="ans">
+                  <p>海菲秀療程結束後能立即見到效果，肌膚會變得細緻平滑、均勻透亮，且充滿水潤感。建議每個月可以進行一次保養療程，改善皮膚及穩定膚況。</p>
+                </div>
+            </li>
+            <li>
+                <div class="qu">
+                  <p>Q6.海菲秀與水飛梭一樣嗎？</p>
+                  <p class="arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></p>
+                </div>
+                <div class="ans">
+                  <p>海菲秀與水飛梭最主要的差別在於有沒有經過衛福部認證。水飛梭是一種廣泛的稱呼，指的是能深層清潔毛孔的儀器。而海菲秀則是經過衛福部認證的醫美儀器，採用專利渦漩技術，徹底清潔毛孔、去除老廢角質、黑頭粉刺，同時還能深層滋潤肌膚，是只能在醫美診所施作的療程，具有品質與效果保證。</p>
+                </div>
+            </li>
+            <li>
+                <div class="qu">
+                  <p>Q7.海菲秀術後如何保養？</p>
+                  <p class="arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></p>
+                </div>
+                <div class="ans">
+                  <p>術後一週建議加強保濕與防曬，並使用至少 SPF40 以上的防曬隔離品及避免酸類與去角質產品。</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <div class="fix1999">
+        <a href="#" target="_blank">
+            <img src="images/hydra_fix_bottom_pc.png" alt="" width="100%">
+        </a>
+    </div>
+
+</main>
+
+    <script>
+        $('.manual').slick({
+            dots: true,
+            infinite: false,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            prevArrow: '<button type="button" class="slick-custom-arrow slick-prev"> <i class="fa fa-chevron-left" aria-hidden="true"></i> </button>',
+            nextArrow: '<button type="button" class="slick-custom-arrow slick-next"> <i class="fa fa-chevron-right" aria-hidden="true"></i> </button>',
+            responsive: [
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    </script>
+
+    <script>
+        $('.comment').slick({
+            dots: true,
+            infinite: false,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            prevArrow: '<button type="button" class="slick-custom-arrow slick-prev"> <i class="fa fa-chevron-left" aria-hidden="true"></i> </button>',
+            nextArrow: '<button type="button" class="slick-custom-arrow slick-next"> <i class="fa fa-chevron-right" aria-hidden="true"></i> </button>',
+            responsive: [
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+            ]
+        });
+    </script>
+
+</body>
+</html>
